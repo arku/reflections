@@ -8,3 +8,10 @@ How is the staging area different from the working directory and the repository?
 
 How can you use the staging area to make sure you have one commit per logical change?
 		Using git diff --staged compares the changes made to the staging area with the latest commit. With the help of this, we can track the changes made to the staging area. So, its always a good idea to run git diff --staged after adding a file to the staging area to make surewe have one commit per logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	Say, if I have a working application and I would like to add a new feature to the application but I am unsure of whether the feature will work or not. Also I wouldn't want to break the working application by adding code which doen't work. So, to maintain the history clear, creating a new branch would be useful. If the feature works, we can merge the newly-created branch with the master branch.
+
+
+How do the diagrams help you visualize the branch structure?
+			With the help of visualizing the branch structure, we can see which branches exist and where they branch from the master. Also, we can know which commits are unreachable from any of the branches. We can understand the non-linearity of commits pretty easily by drawing diagrams.
